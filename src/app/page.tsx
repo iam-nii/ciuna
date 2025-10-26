@@ -1,3 +1,5 @@
+import CategoryScrollContainer from "@/components/CategoryScrollContainer";
+
 export default function Home() {
   return (
     <div>
@@ -13,6 +15,9 @@ export default function Home() {
         <h2 className="text-slate-500 text-2xl">
           Connect with trusted vendors and find the services you need.
         </h2>
+        <div className="md:w-[70%]">
+          <CategoryScrollContainer />
+        </div>
       </section>
     </div>
   );
