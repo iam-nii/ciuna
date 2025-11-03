@@ -9,6 +9,7 @@ import {
   Gamepad2,
   Cat,
 } from "lucide-react";
+import { Products } from "./types";
 
 const categories = [
   {
@@ -60,4 +61,140 @@ const categories = [
 
 const cities = ["Moscow", "St. Petersburg", "Kyiv", "Lviv", "Odesa"];
 
-export { categories, cities };
+const products: Products = [
+  {
+    id: "i9e8h928h",
+    image: "",
+    status: "new",
+    name: "Russian Language Books Set",
+    description: "Product Desctiption ",
+    city: { city: "Moscow" },
+    createdAt: new Date("1/15/2024"),
+    updatedAt: new Date("1/15/2024"),
+    price: 120000,
+    Vendor: {
+      user: {
+        id: "1",
+        email: "test@test.com",
+        firstName: "John",
+        lastName: "Smith",
+      },
+    },
+  },
+  {
+    id: "i9e8h928h",
+    image: "",
+    status: "used",
+    name: "IKEA HEMNES Dresser - White",
+    description: "Product Desctiption ",
+    city: { city: "Moscow" },
+    createdAt: new Date("1/15/2024"),
+    updatedAt: new Date("1/15/2024"),
+    price: 120000,
+    Vendor: {
+      user: {
+        id: "1",
+        email: "test@test.com",
+        firstName: "John",
+        lastName: "Smith",
+      },
+    },
+  },
+  {
+    id: "i9e8h928h",
+    image: "",
+    status: "used",
+    name: "Gaming Chair - Black",
+    description: "Product Desctiption ",
+    city: { city: "Moscow" },
+    createdAt: new Date("1/15/2024"),
+    updatedAt: new Date("1/15/2024"),
+    price: 120000,
+    Vendor: {
+      user: {
+        id: "1",
+        email: "test@test.com",
+        firstName: "John",
+        lastName: "Smith",
+      },
+    },
+  },
+  {
+    id: "i9e8h928h",
+    image: "",
+    status: "used",
+    name: "Samsung S22 Ultra",
+    description: "Product Desctiption ",
+    city: { city: "Moscow" },
+    createdAt: new Date("1/15/2024"),
+    updatedAt: new Date("1/15/2024"),
+    price: 120000,
+    Vendor: {
+      user: {
+        id: "1",
+        email: "test@test.com",
+        firstName: "John",
+        lastName: "Smith",
+      },
+    },
+  },
+  {
+    id: "i9e8h928h",
+    image: "",
+    status: "used",
+    name: "Designer Winter Coat - Size M",
+    description: "Product Desctiption ",
+    city: { city: "Moscow" },
+    createdAt: new Date("1/15/2024"),
+    updatedAt: new Date("1/15/2024"),
+    price: 120000,
+    Vendor: {
+      user: {
+        id: "1",
+        email: "test@test.com",
+        firstName: "John",
+        lastName: "Smith",
+      },
+    },
+  },
+  {
+    id: "i9e8h928h",
+    image: "",
+    status: "used",
+    name: "Vintage Style Desk - Walnut",
+    description: "Product Desctiption ",
+    city: { city: "Moscow" },
+    createdAt: new Date("1/15/2024"),
+    updatedAt: new Date("1/15/2024"),
+    price: 120000,
+    Vendor: {
+      user: {
+        id: "1",
+        email: "test@test.com",
+        firstName: "John",
+        lastName: "Smith",
+      },
+    },
+  },
+  {
+    id: "i9e8h928h",
+    image: "",
+    status: "used",
+    name: "MacBook Pro 13 inch",
+    description: "Product Desctiption ",
+    city: { city: "Moscow" },
+    createdAt: new Date("1/15/2024"),
+    updatedAt: new Date("1/15/2024"),
+    price: 120000,
+    Vendor: {
+      user: {
+        id: "1",
+        email: "test@test.com",
+        firstName: "John",
+        lastName: "Smith",
+      },
+    },
+  },
+];
+
+export { categories, cities, products };
