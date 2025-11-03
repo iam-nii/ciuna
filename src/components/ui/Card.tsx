@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { Product } from "@/lib/types";
 
-import { Clock, Heart, MapPin } from "lucide-react";
+import { Clock, Heart, MapPin, Shield } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "./button";
 
@@ -66,8 +66,11 @@ function Card({ product }: { product: Product }) {
               {product?.Vendor?.user?.lastName?.charAt(0)}
             </AvatarFallback>
           </Avatar>
-          <p>
-            {product?.Vendor?.user?.firstName} {product?.Vendor?.user?.lastName}
+          <p className="flex items-center gap-1">
+            {product?.Vendor?.user?.firstName} {product?.Vendor?.user?.lastName}{" "}
+            {product?.Vendor?.user?.isVerified && (
+              <Shield className="w-3 h-3 text-green-500" />
+            )}
           </p>
         </div>
         <Button className="w-full h-8 cursor-pointer bg-orange-500 hover:bg-orange-600 text-white font-bold">
